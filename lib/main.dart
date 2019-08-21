@@ -2,8 +2,18 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(
       MaterialApp(
-        home: Center(
-          child: Text('Hello Flutter'),
+        home: Scaffold(
+          backgroundColor: Colors.white,
+          appBar: AppBar(
+            title: Text('I am Rich'),
+            backgroundColor: Colors.cyanAccent[200],
+          ),
+          body: Center(
+            child: Image(
+              image: //NetworkImage('https://picsum.photos/250?image=9'),
+                  AssetImage('images/fall.jpg'),
+            ),
+          ),
         ),
       ),
     );
